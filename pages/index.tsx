@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
+import React from 'react';
+import Card from '../components/common/Card';
+import Button from '../components/common/Button';
 
+// Removed duplicate Home component and default export to resolve multiple default export errors.
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
